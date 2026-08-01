@@ -3,21 +3,24 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Telve — Gizlilik Politikası</title>
+<title>Telve — Gizlilik Politikası ve Aydınlatma Metni</title>
 <style>
   :root { --bg:#0C0A09; --fg:#EDE6DE; --muted:#A79684; --copper:#9E6F45; --line:#241C17; }
   * { box-sizing:border-box; }
   body { margin:0; background:var(--bg); color:var(--fg);
-         font:16px/1.7 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
+         font:16px/1.75 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
          padding:48px 20px; }
   main { max-width:680px; margin:0 auto; }
   h1 { font-size:28px; margin:0 0 4px; letter-spacing:-.01em; }
-  h2 { font-size:18px; margin:36px 0 10px; color:var(--copper); }
-  .sub { color:var(--muted); margin:0 0 36px; }
+  h2 { font-size:17px; margin:36px 0 10px; color:var(--copper); }
+  .sub { color:var(--muted); margin:0 0 32px; }
   a { color:var(--copper); }
-  ul { padding-left:20px; }
-  li { margin:6px 0; }
-  table { width:100%; border-collapse:collapse; margin:12px 0; font-size:15px; }
+  ol { padding-left:22px; }
+  ol > li { margin:10px 0; }
+  ul { padding-left:22px; }
+  ul > li { margin:6px 0; }
+  .lead { border-left:2px solid var(--line); padding-left:16px; color:var(--muted); }
+  table { width:100%; border-collapse:collapse; margin:14px 0; font-size:15px; }
   th, td { text-align:left; padding:10px 8px; border-bottom:1px solid var(--line); vertical-align:top; }
   th { color:var(--muted); font-weight:600; }
   footer { margin-top:56px; padding-top:20px; border-top:1px solid var(--line);
@@ -26,88 +29,187 @@
 </head>
 <body>
 <main>
-  <h1>Gizlilik Politikası</h1>
-  <p class="sub">Telve · Son güncelleme: 30 Temmuz 2026</p>
+  <h1>Gizlilik Politikası ve Aydınlatma Metni</h1>
+  <p class="sub">Telve · Yürürlük tarihi: 1 Ağustos 2026</p>
 
-  <p>Bu politika, Telve uygulamasının hangi verileri işlediğini açıklar.
-     Uygulamayı geliştiren ve işleten: Anıl Ünkaya.</p>
+  <p class="lead">İşbu metin, 6698 sayılı Kişisel Verilerin Korunması Kanunu'nun
+     ("KVKK") 10 uncu maddesi ile Aydınlatma Yükümlülüğünün Yerine Getirilmesinde
+     Uyulacak Usul ve Esaslar Hakkında Tebliğ uyarınca, Telve mobil uygulaması
+     kapsamında işlenen kişisel verilere ilişkin aydınlatma yükümlülüğünün yerine
+     getirilmesi amacıyla hazırlanmıştır.</p>
 
-  <h2>Hesap yok</h2>
-  <p>Telve hesap açmanı, e-posta ya da telefon numarası vermeni istemez.
-     Uygulama, cihazında oluşturulan rastgele bir tanımlayıcıyla çalışır.
-     Bu tanımlayıcı kimliğini içermez ve seni kişi olarak tanımlamaz.</p>
+  <h2>1. Veri Sorumlusunun Kimliği</h2>
+  <p>Veri sorumlusu, Telve mobil uygulamasını geliştiren ve işleten
+     <strong>Anıl Ünkaya</strong>'dır. İletişim:
+     <a href="mailto:anilunkaya@gmail.com">anilunkaya@gmail.com</a></p>
 
-  <h2>İşlenen veriler</h2>
+  <h2>2. Üyelik Bulunmaması ve Cihaz Tanımlayıcısı</h2>
+  <ol>
+    <li>Uygulamada üyelik oluşturulmaz; ad, soyad, e-posta adresi veya telefon
+        numarası talep edilmez.</li>
+    <li>Uygulama, cihaz üzerinde üretilen ve doğrudan kimlik bilgisi içermeyen
+        rastgele bir tanımlayıcı ile çalışır. Anılan tanımlayıcı, altın bakiyesi
+        ve fal geçmişinin ilgili cihazla eşleştirilmesi amacıyla kullanılır.</li>
+    <li>Söz konusu tanımlayıcı tek başına kimlik tespitine elverişli olmamakla
+        birlikte, KVKK kapsamında kişisel veri olarak değerlendirilerek işbu
+        metinde açıklanan esaslara tabi tutulmaktadır.</li>
+  </ol>
+
+  <h2>3. İşlenen Kişisel Veriler, Amaçlar ve Saklama Süreleri</h2>
   <table>
-    <tr><th>Veri</th><th>Neden</th><th>Saklama</th></tr>
+    <tr><th>Veri kategorisi</th><th>İşleme amacı</th><th>Saklama süresi</th></tr>
     <tr>
-      <td>Fincan / avuç içi fotoğrafları</td>
-      <td>Falın oluşturulması</td>
-      <td>Okuma tamamlandıktan sonra saklanmaz</td>
+      <td>Fincan ve avuç içi görselleri</td>
+      <td>Fal yorumunun oluşturulması</td>
+      <td>Yorum üretildikten sonra saklanmaz</td>
     </tr>
     <tr>
-      <td>Doğum tarihi, saati, yeri</td>
-      <td>Doğum haritası ve burç hesabı</td>
-      <td>Cihazında ve hesabınla ilişkili kayıtta tutulur</td>
+      <td>Doğum tarihi, doğum saati, doğum yeri</td>
+      <td>Doğum haritası ve burç hesaplamalarının yapılması</td>
+      <td>Cihazda ve cihaz tanımlayıcısıyla ilişkili kayıtta; silme talebine kadar</td>
     </tr>
     <tr>
-      <td>Fal metinleri, sorduğun sorular</td>
-      <td>Geçmişi göstermek, sonraki falların tutarlı olması</td>
+      <td>İlişki durumu, çalışma durumu, yaş aralığı</td>
+      <td>Yorumların kullanıcıya göre kişiselleştirilmesi</td>
+      <td>Cihazda tutulur; her fal talebiyle iletilir, sunucuda saklanmaz</td>
+    </tr>
+    <tr>
+      <td>Fal metinleri ve iletilen sorular</td>
+      <td>Geçmişin görüntülenmesi, yorumlar arası tutarlılığın sağlanması</td>
       <td>Silme talebine kadar</td>
     </tr>
     <tr>
-      <td>Cihaz tanımlayıcısı</td>
-      <td>Altın bakiyesi ve fal geçmişinin cihazla eşleşmesi</td>
+      <td>Cihaz tanımlayıcısı, altın bakiyesi ve işlem kayıtları</td>
+      <td>Bakiyenin takibi, mükerrer ödül verilmesinin önlenmesi</td>
       <td>Silme talebine kadar</td>
     </tr>
     <tr>
       <td>Kullanım olayları (ekran adı, fal türü, dil, süre)</td>
-      <td>Uygulamanın iyileştirilmesi</td>
-      <td>Kişisel bilgi içermez; ekran kaydı alınmaz</td>
+      <td>Uygulamanın iyileştirilmesi ve hataların giderilmesi</td>
+      <td>Kimlik bilgisi içermez; ekran kaydı alınmaz</td>
+    </tr>
+    <tr>
+      <td>Hata ve çökme kayıtları</td>
+      <td>Uygulama kararlılığının sağlanması</td>
+      <td>Kimlik bilgisi içermez</td>
     </tr>
   </table>
 
-  <p>Telve; adını, e-postanı, telefonunu, konumunu, rehberini ya da fotoğraf
-     kütüphanenin tamamını toplamaz. Yalnızca fal için seçtiğin fotoğraflara erişir.</p>
+  <p>Uygulama; ad, soyad, e-posta adresi, telefon numarası, konum bilgisi, rehber
+     kayıtları ve fotoğraf kütüphanesinin tamamı üzerinde işleme
+     <strong>gerçekleştirmez</strong>. Görsel erişimi, yalnızca kullanıcının fal
+     için seçtiği görsellerle sınırlıdır.</p>
 
-  <h2>Hizmet sağlayıcılar</h2>
-  <p>Uygulamanın çalışması için şu üçüncü taraf hizmetler kullanılır:</p>
+  <h2>4. Kişisel Verilerin Toplanma Yöntemi ve Hukuki Sebebi</h2>
+  <ol>
+    <li>Kişisel veriler, kullanıcının uygulama arayüzü üzerinden doğrudan
+        iletmesi ve uygulamanın çalışması sırasında otomatik yollarla üretilmesi
+        suretiyle elektronik ortamda toplanmaktadır.</li>
+    <li>Veriler; KVKK'nın 5 inci maddesinin ikinci fıkrasının (c) bendi uyarınca
+        <em>sözleşmenin kurulması veya ifasıyla doğrudan doğruya ilgili olması</em>
+        ve (f) bendi uyarınca <em>veri sorumlusunun meşru menfaati</em> hukuki
+        sebeplerine dayanılarak işlenmektedir.</li>
+    <li>Kullanıcının kendi iradesiyle ilettiği rüya anlatımı, niyet metni ve
+        benzeri serbest metinlerin özel nitelikli kişisel veri içermesi hâlinde,
+        bu veriler yalnızca ilgili yorumun üretilmesi amacıyla ve kullanıcının
+        açık rızasına dayalı olarak işlenir. Kullanıcının bu tür verileri
+        iletmeme hakkı saklıdır.</li>
+  </ol>
+
+  <h2>5. Kişisel Verilerin Aktarılması</h2>
+  <p>Kişisel veriler, uygulamanın işletilebilmesi amacıyla ve amaçla sınırlı
+     olmak üzere aşağıdaki hizmet sağlayıcılara aktarılmaktadır:</p>
   <ul>
-    <li><strong>Supabase</strong> — veritabanı ve sunucu işlemleri.</li>
-    <li><strong>Anthropic ve DeepSeek</strong> — fal metinlerinin üretilmesi.
-        Fotoğraflar ve fal girdileri bu servislere işlenmek üzere gönderilir,
-        model eğitimi için kullanılmaz.</li>
-    <li><strong>Google AdMob</strong> — ödüllü video reklamlar. Reklam gösterimi için
-        Google kendi tanımlayıcılarını kullanabilir; ayrıntı için
-        <a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener">Google reklam politikası</a>.</li>
-    <li><strong>PostHog</strong> — kişisel bilgi içermeyen kullanım istatistikleri.</li>
-    <li><strong>Apple</strong> — uygulama içi satın almalar. Ödeme bilgilerin Apple'da kalır,
-        Telve kart bilgilerini görmez ve saklamaz.</li>
+    <li><strong>Supabase</strong> — veri tabanı ve sunucu tarafı işlem altyapısı.</li>
+    <li><strong>Anthropic</strong> ve <strong>DeepSeek</strong> — yorum metinlerinin
+        üretilmesi. Görseller ve fal girdileri işlenmek üzere iletilir; anılan
+        sağlayıcılar nezdinde model eğitimi amacıyla kullanılmaz.</li>
+    <li><strong>Google AdMob</strong> — ödüllü video reklamların sunulması.</li>
+    <li><strong>PostHog</strong> — kimlik bilgisi içermeyen kullanım istatistikleri.</li>
+    <li><strong>Sentry</strong> — hata ve çökme kayıtlarının izlenmesi. Kişisel
+        veri gönderimi, oturum kaydı ve performans izleme özellikleri kapalıdır.</li>
+    <li><strong>RevenueCat</strong> — uygulama içi satın alma haklarının
+        doğrulanması ve yönetimi.</li>
+    <li><strong>Apple</strong> — uygulama içi satın alma işlemleri. Ödeme
+        bilgileri Apple nezdinde kalır; kart bilgileri veri sorumlusu tarafından
+        görülmez ve saklanmaz.</li>
   </ul>
+  <p>Anılan sağlayıcıların sunucuları yurt dışında bulunmaktadır. Bu nedenle
+     kişisel veriler, KVKK'nın 9 uncu maddesi çerçevesinde yurt dışına
+     aktarılmaktadır. Aktarım, uygulamanın kullanılabilmesi için teknik zorunluluk
+     olup uygulamanın kullanılmaya başlanmasıyla birlikte bu aktarıma açık rıza
+     verilmiş sayılır. Rızanın verilmemesi hâlinde uygulamanın kullanılmaması
+     gerekmektedir.</p>
 
-  <h2>Reklamlar</h2>
-  <p>Altın kazanmak için izlediğin ödüllü videolar Google AdMob üzerinden gösterilir.
-     Reklamlar isteğe bağlıdır; izlemezsen uygulamanın hiçbir özelliği kısıtlanmaz.</p>
-  <p>Telve, iOS'un izleme izni (App Tracking Transparency) penceresini <strong>göstermez</strong> ve
-     reklam kimliğine (IDFA) erişmez. Bu nedenle uygulamalar arası takip yapılmaz ve
-     gösterilen reklamlar kişiselleştirilmez.</p>
+  <h2>6. Reklamlar ve İzleme</h2>
+  <ol>
+    <li>Altın kazanılmasına imkân tanıyan ödüllü videolar Google AdMob üzerinden
+        sunulmaktadır. Reklam izlemek isteğe bağlıdır; izlenmemesi hâlinde
+        uygulamanın hiçbir işlevi kısıtlanmaz.</li>
+    <li>Uygulama, iOS izleme izni (App Tracking Transparency) penceresini
+        <strong>göstermemekte</strong> ve reklam kimliğine (IDFA)
+        <strong>erişmemektedir</strong>. Bu nedenle uygulamalar arası izleme
+        yapılmamakta ve reklamlar kişiselleştirilmemektedir.</li>
+    <li>Reklam sunumu sırasında Google'ın kendi tanımlayıcılarını kullanması
+        mümkündür; ayrıntılar için
+        <a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener">Google reklam politikası</a>
+        incelenebilir.</li>
+  </ol>
 
-  <h2>Çocuklar</h2>
-  <p>Telve 18 yaş ve üzeri içindir. Bilerek çocuklardan veri toplamayız.</p>
+  <h2>7. Veri Güvenliği</h2>
+  <p>Veri sorumlusu, KVKK'nın 12 nci maddesi uyarınca kişisel verilerin hukuka
+     aykırı olarak işlenmesini ve erişilmesini önlemek ile muhafazasını sağlamak
+     amacıyla uygun güvenlik düzeyini temin etmeye yönelik teknik ve idari
+     tedbirleri almaktadır. Veri aktarımları şifreli bağlantılar üzerinden
+     gerçekleştirilmekte, fal görselleri yorum üretildikten sonra saklanmamaktadır.</p>
 
-  <h2>Haklarınız</h2>
-  <p>Verilerinin silinmesini ya da hangi verilerin tutulduğunu öğrenmeyi istersen
-     <a href="mailto:anilunkaya@gmail.com">anilunkaya@gmail.com</a> adresine yaz.
-     Hesap olmadığı için talebini eşleştirmek üzere uygulama içindeki cihaz kimliğini
-     isteyebiliriz. Talepler en geç 30 gün içinde karşılanır.</p>
-  <p>Uygulamayı silmen cihazındaki verileri kaldırır; sunucudaki kaydın silinmesi için
-     yukarıdaki adrese yazman gerekir.</p>
+  <h2>8. Çocuklara İlişkin Hükümler</h2>
+  <p>Uygulama yetişkin kullanıcılara yönelik olup App Store'da 17+ yaş
+     kategorisinde derecelendirilmiştir. Çocuklardan bilerek kişisel veri
+     toplanmamaktadır. Bir çocuğa ait kişisel verinin işlendiğinin tespiti hâlinde
+     ilgili veriler gecikmeksizin silinir.</p>
 
-  <h2>Değişiklikler</h2>
-  <p>Bu politika güncellenirse bu sayfadaki tarih değişir. Önemli değişikliklerde
-     uygulama içinde bilgilendirme yapılır.</p>
+  <h2>9. İlgili Kişinin Hakları</h2>
+  <p>KVKK'nın 11 inci maddesi uyarınca her ilgili kişi, veri sorumlusuna
+     başvurarak kendisiyle ilgili olarak;</p>
+  <ol>
+    <li>Kişisel verisinin işlenip işlenmediğini öğrenme,</li>
+    <li>Kişisel verisi işlenmişse buna ilişkin bilgi talep etme,</li>
+    <li>Kişisel verisinin işlenme amacını ve bunların amacına uygun kullanılıp
+        kullanılmadığını öğrenme,</li>
+    <li>Yurt içinde veya yurt dışında kişisel verisinin aktarıldığı üçüncü
+        kişileri bilme,</li>
+    <li>Kişisel verisinin eksik veya yanlış işlenmiş olması hâlinde bunların
+        düzeltilmesini isteme,</li>
+    <li>KVKK'nın 7 nci maddesinde öngörülen şartlar çerçevesinde kişisel verisinin
+        silinmesini veya yok edilmesini isteme,</li>
+    <li>(e) ve (f) bentleri uyarınca yapılan işlemlerin, kişisel verisinin
+        aktarıldığı üçüncü kişilere bildirilmesini isteme,</li>
+    <li>İşlenen verilerin münhasıran otomatik sistemler vasıtasıyla analiz
+        edilmesi suretiyle kendisi aleyhine bir sonucun ortaya çıkmasına itiraz
+        etme,</li>
+    <li>Kişisel verisinin kanuna aykırı olarak işlenmesi sebebiyle zarara uğraması
+        hâlinde zararın giderilmesini talep etme</li>
+  </ol>
+  <p>haklarına sahiptir.</p>
 
-  <h2>İletişim</h2>
+  <h2>10. Başvuru Usulü</h2>
+  <p>İlgili kişiler taleplerini
+     <a href="mailto:anilunkaya@gmail.com">anilunkaya@gmail.com</a> adresine
+     iletebilir. Uygulamada üyelik bulunmadığından, talebin ilgili kayıtla
+     eşleştirilebilmesi amacıyla uygulama içinde görüntülenen cihaz tanımlayıcısı
+     talep edilebilir. Başvurular, Veri Sorumlusuna Başvuru Usul ve Esasları
+     Hakkında Tebliğ uyarınca en geç <strong>otuz gün</strong> içinde
+     sonuçlandırılır.</p>
+  <p>Uygulamanın cihazdan kaldırılması, cihaz üzerinde tutulan verileri siler;
+     sunucu tarafındaki kayıtların silinmesi için yukarıdaki adrese başvurulması
+     gerekmektedir.</p>
+
+  <h2>11. Değişiklikler</h2>
+  <p>İşbu metin güncellenmesi hâlinde yürürlük tarihi bu sayfada değiştirilir;
+     esaslı değişiklikler uygulama içinde ayrıca duyurulur.</p>
+
+  <h2>12. İletişim</h2>
   <p><a href="mailto:anilunkaya@gmail.com">anilunkaya@gmail.com</a></p>
 
   <footer>
